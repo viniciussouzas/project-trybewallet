@@ -56,9 +56,10 @@ class WalletForm extends Component {
     return (
       <div>
         <form>
-          <label htmlFor="value-input">
+          <label htmlFor="value">
             Valor:
             <input
+              id="value"
               type="number"
               name="value"
               value={ value }
@@ -66,9 +67,10 @@ class WalletForm extends Component {
               data-testid="value-input"
             />
           </label>
-          <label htmlFor="description-input">
+          <label htmlFor="description">
             Descrição:
             <input
+              id="description"
               type="text"
               name="description"
               value={ description }
@@ -76,9 +78,10 @@ class WalletForm extends Component {
               data-testid="description-input"
             />
           </label>
-          <label htmlFor="currency-input">
+          <label htmlFor="currency">
             Moeda:
             <select
+              id="currency"
               data-testid="currency-input"
               name="currency"
               value={ currency }
@@ -90,9 +93,10 @@ class WalletForm extends Component {
               }
             </select>
           </label>
-          <label htmlFor="method-input">
+          <label htmlFor="method">
             Método de pagamento:
             <select
+              id="method"
               data-testid="method-input"
               name="method"
               value={ method }
@@ -103,9 +107,10 @@ class WalletForm extends Component {
               <option>Cartão de débito</option>
             </select>
           </label>
-          <label htmlFor="tag-input">
+          <label htmlFor="tag">
             Tag:
             <select
+              id="tag"
               data-testid="tag-input"
               name="tag"
               value={ tag }

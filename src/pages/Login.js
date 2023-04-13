@@ -40,9 +40,11 @@ class Login extends Component {
     return (
       <div>
         <form>
-          <label htmlFor="email-input">
+          <label htmlFor="email">
+            Email:
             <input
-              type="text"
+              id="email"
+              type="email"
               name="email"
               value={ email }
               onChange={ this.onInputChange }
@@ -50,8 +52,10 @@ class Login extends Component {
               placeholder="Insira seu e-mail"
             />
           </label>
-          <label htmlFor="password-input">
+          <label htmlFor="password">
+            Senha:
             <input
+              id="password"
               type="password"
               name="password"
               value={ password }
