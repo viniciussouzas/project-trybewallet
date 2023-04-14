@@ -30,7 +30,7 @@ class Header extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  ...state.user,
+  email: state.user.email,
   expenses: state.wallet.expenses,
 });
 
